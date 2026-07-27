@@ -24,7 +24,7 @@ export function StaffTeam() {
               </span>
             </div>
 
-            <div className="mt-4 grid grid-cols-2 gap-3.5 sm:grid-cols-3 lg:grid-cols-4">
+            <div className="mt-4 flex flex-wrap justify-center gap-3.5">
               {group.members.map((member, i) => (
                 <InView
                   key={member}
@@ -38,22 +38,22 @@ export function StaffTeam() {
                       transition: { duration: 0.4, ease: EASE_EXPO, delay: 0.05 * i },
                     },
                   }}
-                  className="group flex flex-col items-center gap-2 rounded-3xl border-2 bg-cream-surface px-4 pb-4 pt-5 text-center shadow-[0_4px_0_0_theme(colors.cream.border)] transition-all duration-300 ease-bouncy hover:-translate-y-1"
+                  className="group flex w-[140px] flex-none flex-col items-center gap-2 rounded-3xl border-2 bg-cream-surface px-4 pb-4 pt-5 text-center shadow-[0_4px_0_0_theme(colors.cream.border)] transition-all duration-300 ease-bouncy hover:-translate-y-1"
                   style={{ borderColor: group.color }}
                 >
                   <p className="font-display text-[13px] font-bold" style={{ color: group.color }}>
                     {member}
                   </p>
                   <div
-                    className="relative h-32 w-full transition-transform duration-300 ease-bouncy group-hover:scale-105"
+                    className="relative mx-auto h-32 w-14 flex-none transition-transform duration-300 ease-bouncy group-hover:scale-105"
                     style={{ imageRendering: "pixelated" }}
                   >
                     <Image
                       src={`https://mc-heads.net/body/${member}/100`}
                       alt={member}
                       fill
-                      className="object-contain"
-                      sizes="120px"
+                      className="object-contain object-top"
+                      sizes="56px"
                       unoptimized
                     />
                   </div>
