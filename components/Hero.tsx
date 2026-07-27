@@ -65,39 +65,34 @@ export function Hero() {
               hidden: { opacity: 0, y: 12 },
               visible: { opacity: 1, y: 0, transition: { duration: 0.5, ease: EASE_EXPO, delay: 0.5 } },
             }}
-            className="mt-7 flex flex-col items-center gap-3 md:items-start"
+            className="mt-7 flex flex-col gap-3 sm:flex-row sm:justify-center md:justify-start"
           >
+            <a
+              href="https://discord.gg/letal"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center justify-center gap-2 rounded-2xl bg-[#5865F2] px-6 py-3 font-display text-[15px] font-bold text-white shadow-[0_5px_0_0_#3c45a5] transition-all duration-200 ease-bouncy hover:-translate-y-0.5 hover:shadow-[0_7px_0_0_#3c45a5] active:translate-y-1 active:shadow-none"
+            >
+              Discord
+            </a>
+
             <button
               type="button"
               onClick={handleCopy}
-              className="flex items-center gap-2 rounded-full border-2 border-cream-border bg-cream-surface px-4 py-2 font-mono text-[13px] font-semibold text-ink transition-all duration-200 ease-bouncy hover:-translate-y-0.5 hover:border-acid"
+              className="flex min-w-[190px] items-center justify-center gap-2 rounded-2xl bg-amber px-6 py-3 font-display text-[15px] font-bold text-cream shadow-[0_5px_0_0_theme(colors.amber.deep)] transition-all duration-200 ease-bouncy hover:-translate-y-0.5 hover:shadow-[0_7px_0_0_theme(colors.amber.deep)] active:translate-y-1 active:shadow-none"
             >
-              <RuleIcon
-                icon={copied ? "shield-check" : "copy"}
-                className={`h-4 w-4 ${copied ? "text-green" : "text-ink-faint"}`}
-              />
-              {copied ? "¡IP copiada!" : SERVER_IP}
+              {copied ? (
+                <>
+                  <RuleIcon icon="shield-check" className="h-4 w-4 animate-pop-in" />
+                  ¡IP copiada!
+                </>
+              ) : (
+                <>
+                  Empezar a jugar
+                  <RuleIcon icon="arrow-right" className="h-4 w-4" />
+                </>
+              )}
             </button>
-
-            <div className="flex flex-col gap-3 sm:flex-row">
-              <a
-                href="https://discord.gg/letal"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex items-center justify-center gap-2 rounded-2xl bg-[#5865F2] px-6 py-3 font-display text-[15px] font-bold text-white shadow-[0_5px_0_0_#3c45a5] transition-all duration-200 ease-bouncy hover:-translate-y-0.5 hover:shadow-[0_7px_0_0_#3c45a5] active:translate-y-1 active:shadow-none"
-              >
-                Discord
-              </a>
-              <a
-                href="https://tienda.letal.net"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex items-center justify-center gap-2 rounded-2xl bg-amber px-6 py-3 font-display text-[15px] font-bold text-cream shadow-[0_5px_0_0_theme(colors.amber.deep)] transition-all duration-200 ease-bouncy hover:-translate-y-0.5 hover:shadow-[0_7px_0_0_theme(colors.amber.deep)] active:translate-y-1 active:shadow-none"
-              >
-                Empezar a jugar
-                <RuleIcon icon="arrow-right" className="h-4 w-4" />
-              </a>
-            </div>
           </InView>
         </div>
 
