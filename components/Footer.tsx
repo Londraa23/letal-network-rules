@@ -46,9 +46,9 @@ const socials = [
     label: "TikTok",
     href: "https://tiktok.com/@LetalNT",
     icon: TikTokIcon,
-    bg: "bg-black",
-    hoverBorder: "hover:border-ink",
-    hoverShadow: "hover:shadow-[0_4px_0_0_theme(colors.ink.DEFAULT)]",
+    bg: "bg-[#FE2C55]",
+    hoverBorder: "hover:border-[#FE2C55]",
+    hoverShadow: "hover:shadow-[0_4px_0_0_#FE2C55]",
   },
   {
     label: "X",
@@ -90,7 +90,7 @@ export function Footer() {
           </p>
         </div>
 
-        <div className="flex flex-wrap gap-2.5">
+        <div className="flex flex-col gap-2.5">
           {socials.map((social) => (
             <a
               key={social.label}
