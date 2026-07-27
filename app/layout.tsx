@@ -24,8 +24,11 @@ const mono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Reglas del Servidor — Letal Network",
-  description: "Normativa oficial de Letal Network. IP: play.letal.net",
+  title: {
+    default: "Letal Network",
+    template: "%s — Letal Network",
+  },
+  description: "Servidor de Minecraft en español. IP: play.letal.net",
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

@@ -24,7 +24,9 @@ export type IconKey =
   | "headset"
   | "gem"
   | "shield-check"
-  | "cart";
+  | "cart"
+  | "menu"
+  | "close";
 
 const paths: Record<IconKey, React.ReactNode> = {
   users: (
@@ -185,6 +187,16 @@ const paths: Record<IconKey, React.ReactNode> = {
       <path d="M3 4h2.2l1.2 11.2A2 2 0 0 0 8.4 17h8.2a2 2 0 0 0 2-1.7L20 8H6.5" />
       <circle cx="9" cy="20.5" r="1.4" fill="currentColor" stroke="none" />
       <circle cx="17" cy="20.5" r="1.4" fill="currentColor" stroke="none" />
+    </>
+  ),
+  menu: (
+    <>
+      <path d="M4 6h16M4 12h16M4 18h16" />
+    </>
+  ),
+  close: (
+    <>
+      <path d="M5 5l14 14M19 5 5 19" />
     </>
   ),
 };
