@@ -28,7 +28,7 @@ export const metadata: Metadata = {
     default: "Letal Network",
     template: "%s — Letal Network",
   },
-  description: "Servidor de Minecraft en español. IP: play.letal.net",
+  description: "Servidor de Minecraft en español. IP: letal.net",
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

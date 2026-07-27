@@ -6,7 +6,7 @@ import { TextEffect } from "@/components/motion-primitives/text-effect";
 import { InView } from "@/components/motion-primitives/in-view";
 import { RuleIcon } from "@/components/icons";
 
-const SERVER_IP = "play.letal.net";
+const SERVER_IP = "letal.net";
 const EASE_EXPO: [number, number, number, number] = [0.16, 1, 0.3, 1];
 
 export function Hero() {

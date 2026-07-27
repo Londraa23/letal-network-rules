@@ -12,7 +12,7 @@ const cards: { icon: IconKey; color: CategoryColor; title: string; body: string 
     icon: "scale",
     color: "blue",
     title: "Aplicación general",
-    body: "Todos los jugadores conectados a play.letal.net deben cumplir esta normativa, sin excepción.",
+    body: "Todos los jugadores conectados a letal.net deben cumplir esta normativa, sin excepción.",
   },
   {
     icon: "gavel",
@@ -72,7 +72,7 @@ export function RulesHero() {
           delay={0.45}
           className="mt-5 max-w-xl text-[16px] font-semibold leading-relaxed text-ink-muted"
         >
-          {"Este documento reúne las normas que rigen la convivencia y el juego dentro de Letal Network. Su cumplimiento es obligatorio para todos los jugadores conectados a play.letal.net."}
+          {"Este documento reúne las normas que rigen la convivencia y el juego dentro de Letal Network. Su cumplimiento es obligatorio para todos los jugadores conectados a letal.net."}
         </TextEffect>
 
         <div className="mt-10 grid gap-4 sm:grid-cols-3 md:mt-14">

@@ -1,4 +1,4 @@
-const SERVER_ADDRESS = "play.letal.net";
+const SERVER_ADDRESS = "letal.net";
 
 export interface ServerStatus {
   online: boolean;

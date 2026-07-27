@@ -9,7 +9,7 @@ import { rules } from "@/data/rules";
 
 export const metadata: Metadata = {
   title: "Reglas del Servidor",
-  description: "Normativa oficial de Letal Network. IP: play.letal.net",
+  description: "Normativa oficial de Letal Network. IP: letal.net",
 };
 
 export default function ReglasPage() {

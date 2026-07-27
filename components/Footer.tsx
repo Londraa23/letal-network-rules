@@ -141,7 +141,7 @@ export function Footer() {
 
       <div className="flex flex-col items-start gap-2 border-t-2 border-cream-border py-6 text-[13px] font-semibold text-ink-faint sm:flex-row sm:items-center sm:justify-between">
         <p>Letal Network · {year}</p>
-        <p>play.letal.net</p>
+        <p>letal.net</p>
       </div>
     </footer>
   );
