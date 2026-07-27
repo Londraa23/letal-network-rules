@@ -1,0 +1,175 @@
+{% extends 'languageConfig.twig' %}
+
+{% set colors %}
+<style>
+:root {
+    --logo_width: 445px;
+
+    /* ========================= */
+    /* 🎨 IDENTIDAD PRINCIPAL */
+    /* ========================= */
+
+    --main-color: #ff4747;          /* rojo Letal Network */
+    --error-color: #ff7373;
+
+    --hover-buy: #ff6b6b;
+    --hover-sell: #b91f1f;
+    --hover-info: #ffc048;          /* ámbar de la web */
+
+    /* ========================= */
+    /* 🖤 FONDOS OSCUROS PREMIUM */
+    /* ========================= */
+
+    --background-color: #160f0b;        /* fondo principal (igual que la web) */
+    --second-background: #241a14;       /* tarjetas (cream-surface) */
+    --third-background: #1d1510;        /* bloques internos (cream-soft) */
+    --fourth-background: #2e2119;       /* navbar */
+
+    --package-border: #3b2c22;          /* cream-border */
+
+    /* ========================= */
+    /* 📝 TEXTOS */
+    /* ========================= */
+
+    --primary-text-color: #f7eee4;      /* ink */
+    --secondary-text-color: #b7a596;    /* ink-muted */
+    --focus-text-color: #ff7373;
+
+    /* ========================= */
+    /* 🟡 ACENTO (CLAVE) */
+    /* ========================= */
+
+    --cold-color: #ffc048;              /* ámbar */
+
+    /* ========================= */
+    /* 🔘 BOTONES */
+    /* ========================= */
+
+    --green-button: #ff4747;
+    --light-green: #4fd883;             /* verde de la web (categoría) */
+    --disable-button: #4a1f1f;
+
+    /* ========================= */
+    /* ⚙️ GENERAL */
+    /* ========================= */
+
+    --font-family: 'Nunito', sans-serif;
+
+    --tiny-font: 12px;
+    --small-font: 14px;
+    --medium-font: 16px;
+    --big-font: 18px;
+
+    --border-radius: 16px;
+
+    --header-img: url({{ config("background-image") }});
+    --height-image: 530px;
+    --opacity-image: 0.55;
+    --blur-image: 0px;
+
+    /* ========================= */
+    /* 🎁 GIFTS */
+    /* ========================= */
+
+    --gift-color: #ffc048 !important;
+    --gift-background: rgba(255,192,72,0.18) !important;
+    --gift-accent-color: #ffd98a !important;
+    --gift-text-color: #FFFFFF !important;
+}
+</style>
+{% endset %}
+
+{# Patrons Page #}
+{% set patronsConfiguration = {
+    categories: {
+        category_1: {
+            title: "Mega Comprador",
+            description: "+300€",
+            patrons: ["Moore34", "BD_MielxSal123", ".GreatSoda9224", "FireflySam_"],
+            color: "#7fff6a",
+            crown: true
+        },
+        category_2: {
+            title: "Gran Comprador",
+            description: "+100€",
+            patrons: ["BD_DAVILA5147", "creible", "BD_SplayAntoni", "Cantafort", "REGHOS583", "Adrisaiz", "BD_Resig9486", "Juanmlch", ".GokuGt1507", "CODETAQUIT0", "LxxProblems", ".Obsyx_DMC", "saguserto", "zLuckGD_"],
+            color: "#fed06d",
+            crown: false
+        }
+    }
+} %}
+
+{# Vote Page #}
+{% set voteLinks = {
+    vote_1: {
+        name: "Vote Link 1",
+        link: "https://minecraftservers.org/vote/601524"
+    },
+    vote_2: {
+        name: "Vote Link 2",
+        link: "https://minecraftservers.org/vote/601524"
+    }
+} %}
+
+{% set theme_configuration = {
+    checkoutUserAgreement: {
+        checkbox_1: {
+            content: 'Confirmo con los <a href="/terms" target="_blank">términos y condiciones <span class="mdi mdi-open-in-new" aria-hidden="true"></span></a> de esta compra.'
+        },
+        checkbox_2: {
+            content: 'Confirmo que soy mayor de 16 años o tengo permiso de un mayor de edad, y consiento el uso de los datos en esta compra.'
+        },
+        checkbox_3: {
+            content: 'Verifico que mi nombre de usuario en Minecraft es <b style="color: var(--primary-text-color);">%user%</b>, que es el nombre que uso en Minecraft, el cual me pertenece.'
+        }
+    },
+
+    steam: {
+        profileSteamIcon: "https://cdn.discordapp.com/attachments/455777545485549589/797904052289011744/rust_94773.png"
+    },
+
+    patrons: {
+        pageTitle: "Donadores"
+    },
+
+    vote: {
+        pageTitle: "Vote"
+    },
+
+    tableAddon: {
+        enabled: true,
+        categories: ["3129123"]
+    },
+
+    quantityAddonConfiguration: {
+        enabled: true,
+        categories: {
+            category_2: {
+                id: "3287606",
+                type: "numeric",
+                filters: ["Llave Aqua", "Llave Spawner", "Llave Rara" ]
+            },
+            category_3: {
+                id: "2415892",
+                type: "filter",
+                filters: ["Coins", "Gems"]
+            }
+        }
+    },
+
+    upgradePackageAddon: {
+        enabled: false,
+        upgradePrefix: "[Upgrade]",
+        upgradeCategories: ['2215402'],
+        upgradePackages: {
+            upgrade_5309874: {
+                title: "Vip",
+                image: "https://dunb17ur4ymx4.cloudfront.net/packages/images/627911b9d1fc3d05619a58846649d6f231253039.png",
+                rank_to_upgrade: "5414823",
+                category: "2215402"
+            },
+        }
+    }
+} %}
+
+{% block layout %} {% endblock %}
