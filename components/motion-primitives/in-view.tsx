@@ -19,6 +19,7 @@ export type InViewProps = {
   as?: React.ElementType;
   once?: boolean;
   className?: string;
+  style?: React.CSSProperties;
 };
 
 const defaultVariants = {
@@ -33,7 +34,8 @@ export function InView({
   viewOptions,
   as = 'div',
   once,
-  className
+  className,
+  style
 }: InViewProps) {
   const ref = useRef(null);
   const isInView = useInView(ref, viewOptions);
@@ -46,6 +48,7 @@ export function InView({
     <MotionComponent
       ref={ref}
       className={className}
+      style={style}
       initial='hidden'
       onAnimationComplete={() => {
         if (once) setIsViewed(true)
