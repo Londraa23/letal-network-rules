@@ -25,7 +25,7 @@ export function Hero() {
   return (
     <section className="relative overflow-hidden border-b-2 border-cream-border">
       <div className="absolute inset-0">
-        <Image src="/hero-test.png" alt="" fill priority className="object-cover" sizes="100vw" />
+        <Image src="/hero.png" alt="" fill priority className="object-cover" sizes="100vw" />
         <div className="absolute inset-0 bg-cream/70" />
         <div className="absolute inset-0 bg-gradient-to-t from-cream via-cream/30 to-cream/60" />
       </div>
