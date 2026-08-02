@@ -68,20 +68,12 @@ const socials = [
   },
 ];
 
-const links = [
-  { href: "/", label: "Inicio" },
-  { href: "/modalidades", label: "Modalidades" },
-  { href: "/reglas", label: "Reglas" },
-  { href: "/staff", label: "Staff" },
-  { href: "/colaboraciones", label: "Colaboraciones" },
-];
-
 export function Footer() {
   const year = new Date().getFullYear();
 
   return (
     <footer className="border-t-2 border-cream-border pt-14">
-      <div className="grid gap-10 pb-10 sm:grid-cols-2 md:grid-cols-[1.4fr_1fr_1fr]">
+      <div className="grid gap-10 pb-10 sm:grid-cols-2">
         <div>
           <Link href="/" className="flex items-center">
             <Image
@@ -96,24 +88,6 @@ export function Footer() {
             Una comunidad de Minecraft en español con eventos frecuentes y una aventura que
             siempre continúa.
           </p>
-        </div>
-
-        <div>
-          <p className="font-display text-[13px] font-extrabold uppercase tracking-widest text-ink">
-            Enlaces
-          </p>
-          <ul className="mt-4 space-y-2.5">
-            {links.map((link) => (
-              <li key={link.href}>
-                <Link
-                  href={link.href}
-                  className="text-[14px] font-semibold text-ink-muted transition-colors duration-200 ease-expo hover:text-acid"
-                >
-                  {link.label}
-                </Link>
-              </li>
-            ))}
-          </ul>
         </div>
 
         <div>
